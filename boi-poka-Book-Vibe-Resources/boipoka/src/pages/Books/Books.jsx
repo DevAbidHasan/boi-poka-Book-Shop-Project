@@ -16,16 +16,16 @@ const Books = ({data}) => {
     // console.log(bookPromise);
 
     return (
-        <div >
+        < >
             <h1 className='text-center font-bold text-4xl my-15'>Books</h1>
             <Suspense fallback={<span>Loadiiing...</span>}>
                 <div className='grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {
-                    data.map((singleBook)=><Book key={singleBook.bookId} singleBook={singleBook}></Book>)
+                    data.map((singleBook,index)=><Book key={index} singleBook={singleBook}></Book>)
                     }
                 </div>
             </Suspense>
-        </div>
+        </>
     );
 };
 
