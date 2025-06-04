@@ -21,7 +21,7 @@ const SingleBookDetail = ({b}) => {
                     <div >
                         {
                         tags.map((tag,index)=><button className='mr-4 font-semibold text-green-500 bg-green-50 px-4 rounded-xl' key={index}>#{tag}</button>)
-                    }
+                        }
                     </div>
                     <div className='flex gap-2'>
                        <div> <CiLocationOn size={25} /></div>
